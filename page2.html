@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project 2</title>
+     <!--Links to Bootstrap's CSS file to style the page using bootstrap components-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!--This is the navbar for navigation between pages-->
+    <header>
+         <!--Bootstrap navbar expands on large scrfeents and collapses into a hamburger. The bg-body-tertiarty class adds a background color to the navbar.-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <!--This is where the brand logo or name link.-->
+              <a class="navbar-brand" href="#">Idaho</a>
+               <!--button toggles the navigation links when the screen changes sizes. Also the hamburger menu button is found here.-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <!--This div holds the navigation links and expands or collapse based on sizes.-->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                 <!--Navigation links for moving between pages-->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="page1.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="page2.html">Explore Idaho's Highlights</a>
+                  </li>
+              </ul>
+             </div>
+          </div>
+        </nav>
+      </header>
+       <!--Here you will find main content of the page like headings, subheading and more. -->
+    <main class="container mt-4">
+        <h1>Explore Idaho's Highlights</h1>
+            <h2>Discover Idaho: The Gem State</h2>
+           <p>
+            <ul>
+                <li>Shoshone Falls: Known as the “Niagara of the West,” Shoshone Falls is one of the highest waterfalls in the U.S.</li>
+                <li>Sun Valley: A premier destination for skiing and outdoor activities year-round.</li>
+                <li>Craters of the Moon: A unique volcanic landscape perfect for hiking and exploring.</li>
+                <li>Boise: Idaho’s vibrant capital city with culture, dining, and a growing tech scene.</li>
+            </ul>
+        </p>
+                <h5>Enjoy Idaho’s incredible mix of adventure, beauty, and small-town charm.</h5>
+    </main class=container>  
+     <!--Here is a bootstrap table that displays a list of places. The table-striped class allows the table to alternate colors. -->
+    <table class="table table-striped mt-8">
+        <thead>
+            <tr>
+                <th scope="col">Place</th>
+                <th scope="col">Desctiption</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shoshone Falls</td>
+                <td>Known as the "Niagara of the West."</td>
+            </tr>
+            <tr>
+                <td>Sun Valley</td>
+                <td>Premier skiing destination</td>
+            <tr>
+                <td>Craters of the Moon</td>
+                <td>A unique volcanic Landscape.</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table> 
+     <!--Here you will find the form for loggin into the website-->
+    <h5>Log in to your account to access exclusive member resources.</h5>
+    <form class="form-inline" action="/action_page.php">
+    <div class="row">
+    <!--Here you is the email input field with bootstrap styling-->
+        <div class="col-sm-8 mb-2">
+          <label for="email" class="mr-sm-2">Email adress:</label>
+          <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter email" id="email">
+        </div>
+     </div>
+     <div class="row">
+        <!--Here you is the password input field with bootstrap styling-->
+        <div class="col-sm-8 mb-2">
+          <label for="pwd" class="mr-sm-2">Password:</label>
+          <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter Password" id="pwd">
+    </div>
+</div>
+<!--Checkbox to remember the user for future logins-->
+        <div class="form check mb-2">
+            <label class="form-check-label">
+            <input class="form-check-label" type="checkbox"> Remember me
+        </label>
+        </div>
+        <!--Submit button section-->
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+    <!--Jquery and bootstrap JS for enabling bootstrap comp;onents-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap Project</title>
+<!--This helps link to the bootstrap css file, which is located in the node_modules folder.This allows the bootstrap to work for our projects.-->
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!--Header contains the navbar-->
+    <header>
+         <!--This navigation bar, which is responsive and expands or collapses based on the screen size and collapsing into a hamburger neu on smaller screens.-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <!--This is the branding area of the navbar-->
+              <a class="navbar-brand" href="#">Idaho</a>
+               <!--This is the button for the hamburger menu-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+             <!--This part contains the collapsible part of the navbar--> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <!--Here you will find the navigation list with two links-->
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="page1.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="page2.html">Explore Idaho's Highlights</a>
+                  </li>
+              </ul>
+             </div>
+          </div>
+        </nav>
+      </header>
+<!--Here you will find content for the page-->
+<main class="container mt-4">
+    <h1>Welcome to Idaho </h1>
+        <h2>Discover Idaho: The Gem State</h2>
+       <P> Idaho is known for its stunning landscapes, rich history, and endless outdoor adventures. From the majestic Rocky Mountains to the deep blue lakes, Idaho offers a natural beauty like no other. Whether you enjoy hiking, skiing, or simply exploring nature, Idaho has something for everyone. Come visit and experience the true essence of the Gem State.</P>
+</main>
+ <!--Jquery and bootstrap JS for enabling bootstrap comp;onents-->
+ <script src="node_modules/jquery/dist/jquery.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
